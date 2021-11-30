@@ -1,9 +1,8 @@
 import React from "react";
 
-const CardExpand = ({method, display}) => {
-    return (
-        <div className={`card-expand card-expand--${display?'show':'hide'}`} >{method}</div>
-    )
+const CardExpand = ({ method, display }) => {
+  const className = `card-expand card-expand--${display ? "show" : "hide"}`;
+  return <div className={className}>{method}</div>;
 };
 
-export default CardExpand
+export default CardExpand;
